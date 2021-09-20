@@ -29,7 +29,9 @@ const clusterUrl =
 
 // Oracle config (devnet)
 const pricefeeds: Record<string, string> = {
-  "SOL/USD": "J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix",
+  "SOL/USD": "AdtRGGhmqvom3Jemp5YNrxd9q9unX36BZk1pujkkXijL",
+  "BTC/USD": "74YzQPGUT9VnjrBz8MuyDLKgKpbDqGot5xZJvTtMi6Ng",
+  "ETH/USD": "QJc2HgGhdtW4e7zjvLB1TGRuwEpTre2agU5Lap2UqYz",
 };
 
 function candleListToCandleRows(candles: CandleList): CandleRow[] {
@@ -106,8 +108,8 @@ app.get("/tv/symbols", async (req, res) => {
     description: symbol,
     type: "Spot",
     session: "24x7",
-    exchange: "Pyth",
-    listed_exchange: "Pyth",
+    exchange: "Switchboard",
+    listed_exchange: "Switchboard",
     timezone: "Etc/UTC",
     has_intraday: true,
     supported_resolutions: Object.keys(resolutions),
