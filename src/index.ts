@@ -32,6 +32,10 @@ const pricefeeds: Record<string, string> = {
   "SOL/USD": "AdtRGGhmqvom3Jemp5YNrxd9q9unX36BZk1pujkkXijL",
   "BTC/USD": "74YzQPGUT9VnjrBz8MuyDLKgKpbDqGot5xZJvTtMi6Ng",
   "ETH/USD": "QJc2HgGhdtW4e7zjvLB1TGRuwEpTre2agU5Lap2UqYz",
+  "MNGO/USD": "C1X7qfn59AKGzeUMtfxDgfyGT3VfQLyAoTpv7ULWmmvm",
+  "FTT/USD": "6SqRewrr5f4ycWy7NvLmNgpXJbhwXrtTc1erL9aq2gP3",
+  "SBR/USD": "Lp3VNoRQi699VZe6u59TV8J38ELEUzxkaisoWsDuJgB",
+  "RAY/USD": "CppyF6264uKZkGua1brTUa2fSVdMFSCszwzDs76HCuzU",
 };
 
 function candleListToCandleRows(candles: CandleList): CandleRow[] {
